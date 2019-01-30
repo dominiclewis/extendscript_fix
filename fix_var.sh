@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-echo "CLOSE ALL OPEN ADOBE SOFTWARE"
-read
+read -p "CLOSE ALL OPEN ADOBE SOFTWARE "
 EXTENSION=".jsx"
 TP=".tmp"
 FILE_NAME="11BTBackend"
@@ -12,4 +11,4 @@ sudo sed s/604800000/604800/g "$DIREC$FILE_NAME$EXTENSION" > "$DIREC$FILE_NAME$T
 
 mv "$DIREC$FILE_NAME$TP" "$DIREC$FILE_NAME$EXTENSION"
 
-echo "Script Finished"
+echo "Finished"
